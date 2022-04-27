@@ -30,7 +30,7 @@ public class CategoryTest {
         assertThat(response.code(), equalTo(200));
         assertThat(response.body().getId(), equalTo(1));
         assertThat(response.body().getTitle(), equalTo("Food"));
-        response.body().getProducts().forEach(product -> assertThat(product.getCategoryTitle(), equalTo("Food666")));
+        response.body().getProducts().forEach(product -> assertThat(product.getCategoryTitle(), equalTo("Food")));
     }
 
     @SneakyThrows
